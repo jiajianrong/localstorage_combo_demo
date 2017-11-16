@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>localStorage combo demo</title>
+<!--
+  jiajianrong@58.com
+  2017-11-15
+  -->
+<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="wap-font-scale" content="no">
+<link rel="shortcut icon" href="//static.58.com/favicon.ico" />
+</head>
+<body>
+    
+    <form id="form" method="post" action="/login">
+        <div id="place_holder"></div>
+		
+        
+        <div class="w-input">
+            <input type="text" name="username" id="username" placeholder="用户名" 
+                   maxlength="20" autocomplete="off" value="" required>
+        </div>
+        
+        
+        <div class="w-input w-phonecode">
+            <input type="password" name="password" id="password" placeholder="密码" 
+                   maxlength="20" autocomplete="off" required>
+        </div>
+        
+        
+        <section class="actions">
+            <button type="button" class="btn-submit">登录</button>
+        </section>
+            
+    </form>
+    
+    
+    <script src="ls_combo.js"> </script>
+    <script>
+        require([
+            '/libs/zepto.js',
+            '/libs/common.historystate.js',
+            '/libs/common.validate.js',
+            '/libs/core.trace.js',
+            '/pages/login.js'
+            ]);
+        //http://localhost/combo/?js=/libs/zepto.js,/libs/zepto.modal_20681fc.js,/libs/zepto.info_61c800a.js,/libs/zepto.selectcity.js,/libs/login_3a8ae67.js
+    </script>
+</body>
+</html>
